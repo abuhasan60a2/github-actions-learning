@@ -1,0 +1,14 @@
+name: "First Workflow testing"
+on: push
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome Message
+              run: echo "Welcome to the first workflow"
+            - name: Print list into console
+              run: ls -l
+            - name: Print working directory
+              run: pwd
+            - name: Print Readme.md
+              run: cat README.md
